@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://res.layui.com/layui/dist/css/layui.css?t=1545041465480" media="all">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    html {
+      background-color: #393D49;
+    }
+
+    html,
+    body,
+    p,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      height: 100%;
+      display: flex;
+      margin: 0 auto;
+      width: 1200px;
+      background: #eee;
+    }
+
+    .main-left {
+      width: 39%;
+      height: 100%;
+      border-right: 2px dashed #393D49;
+    }
+
+    .main-right {
+      flex: 1
+    }
+
+    .main-page {
+      padding: 30px 0;
+      margin: 0 30px;
+    }
+
+    .main-page-header {
+      border: none;
+      padding: 0;
+      border-top: 1px solid #393D49;
+      margin-bottom: 30px;
+    }
+
+    .main-page-leg {
+      margin-left: 20px;
+      padding: 0 10px;
+      font-weight: 300;
+    }
+
+    .main-page-title {
+      font-size: 30px;
+      font-weight: 300;
+    }
+
+    .main-row {
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      overflow-y: auto;
+      height: 85vh;
+    }
+
+    .layui-form-label,
+    .main-val {
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .layui-form-label {
+      /* font-weight: 300; */
+    }
+
+    .main-val {
+      /* font-weight: 400; */
+    }
+
+    .layui-table {
+      border: 1px solid #e5e5e5;
+    }
+
+    .layui-table thead tr th {
+      font-size: 13px;
+      /* background-color: #e1e1e1; */
+    }
+
+    .color_hui {
+      font-weight: 300;
+    }
+
+    .color_warn {
+      color: #ff9800;
+    }
+
+    .color_error {
+      color: #e91e63;
+    }
+
+    .color_success {
+      color: #009688;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <section class="main-left">
+      <section class="main-page">
+        <fieldset class="main-page-header">
+          <legend class="main-page-leg"><a class="main-page-title">覃兵</a></legend>
+        </fieldset>
+        <div class="main-row">
+          <form class="layui-form">
+            <div class="layui-form-item">
+              <label class="layui-form-label">事件名称:</label>
+              <div class="layui-form-mid main-val color_error">贷前反欺诈（ABCDEFGHIJKLMN）</div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">风险指数:</label>
+              <div class="layui-form-mid main-val color_error" style="font-size: 27px;">83</div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">决策结果:</label>
+              <div class="layui-form-mid main-val color_success">PASS</div>
+            </div>
+
+            <div class="layui-form-item">
+              <label class="layui-form-label">网盾进件ID:</label>
+              <div class="layui-form-mid main-val">WF110120110120110120</div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">事件描述:</label>
+              <div class="layui-form-mid main-val" style="font-size: 14px;font-weight: 300;text-indent:2em">卡片式面板面板通常用于非白色背景色的主体内从而映衬出边框投影卡片式面板面板通常用于非白色背景色的主体内从而映衬出边框投影卡片式面板面板通常用于非白色背景色的主体内从而映衬出边框投影卡片式面板面板通常用于非白色背景色的主体内从而映衬出边框投影</div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">采集时间:</label>
+              <div class="layui-form-mid main-val">2019-02-02 20:20:20</div>
+            </div>
+            <blockquote class="layui-elem-quote" style="border: 1px solid #d8d8d8;border-left: 5px solid #009688;">联系方式</blockquote>
+            <div class="layui-form-item">
+              <label class="layui-form-label">手机号:</label>
+              <div class="layui-form-mid main-val color_success">13757575750</div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+    <section class="main-right">
+      <section class="main-page">
+        <fieldset class="main-page-header" style="margin-bottom: 0;">
+          <legend class="main-page-leg"><a class="main-page-title">关注名单规则（ABCDEFG）</a></legend>
+        </fieldset>
+        <div class="main-row" style="padding: 20px 0;">
+          <!-- 大类一 START -->
+          <fieldset class="layui-elem-field" style="border-color: #bababa;">
+            <legend>1、事件名称: 关注名单（abcdefg）</legend>
+            <section class="layui-field-box">
+              <table class="layui-table" style="margin-bottom: 0;">
+                <tbody>
+                  <tr>
+                    <td>匹配类型</td>
+                    <td class="color_hui">借款人手机</td>
+                    <td>风险类型显示名</td>
+                    <td class="color_error">信用异常、异常借贷</td>
+                  </tr>
+                  <tr>
+                    <td>风险分数</td>
+                    <td class="color_error">5</td>
+                    <td>决策结果</td>
+                    <td class="color_error">REJECT</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="layui-card">
+                <div class="layui-card-header" style="border-bottom: 1px solid #e3e3e3;height: 39px;line-height: 39px;">描述</div>
+                <div class="layui-card-body color_hui">
+                  卡片式面板面板通常用于非白色背景色的主体内从而映衬出边框投影卡片式面板面板通常用于非白色背景色的主体内从而映衬出边框投影
+                </div>
+              </div>
+              <table class="layui-table">
+                <colgroup>
+                  <col width="170">
+                  <col width="130">
+                  <col width="85">
+                  <col width="80">
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>命中关注名单的属性值</th>
+                    <th>风险类型显示名</th>
+                    <th>风险等级</th>
+                    <th>风险类型</th>
+                    <th>证据时间</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>13757575750</td>
+                    <td class="color_error">信用异常</td>
+                    <td class="color_error">高</td>
+                    <td>abcdefg</td>
+                    <td style="font-size: 12px;">2019-01-01 01:01:01</td>
+                  </tr>
+                  <tr>
+                    <td>13757575750</td>
+                    <td class="color_warn">信用异常</td>
+                    <td class="color_warn">中</td>
+                    <td>abcdefg</td>
+                    <td style="font-size: 12px;">2019-01-01 01:01:01</td>
+                  </tr>
+                  <tr>
+                    <td>13757575750</td>
+                    <td class="color_success">信用异常</td>
+                    <td class="color_success">低</td>
+                    <td>abcdefg</td>
+                    <td style="font-size: 12px;">2019-01-01 01:01:01</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </fieldset>
+          <!-- 大类一 END -->
+          <!-- 大类二 START -->
+          <fieldset class="layui-elem-field" style="border-color: #bababa;">
+            <legend>2、事件名称: 多平台风险（abcdefg）</legend>
+            <section class="layui-field-box">
+              <table class="layui-table" style="margin-bottom: 0;">
+                <tbody>
+                  <tr>
+                    <td>规则名称</td>
+                    <td class="color_hui">7天内申请人在多个平台进行借贷</td>
+                    <td>关联多个平台个数</td>
+                    <td class="color_error">2</td>
+                  </tr>
+                  <tr>
+                    <td>风险分数</td>
+                    <td class="color_error">10</td>
+                    <td>决策结果</td>
+                    <td class="color_success">PASS</td>
+                  </tr>
+                  <tr>
+                    <td>规则编号</td>
+                    <td class="color_hui">12345678</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="layui-table">
+                <thead>
+                  <tr>
+                    <th>行业</th>
+                    <th>数量</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>小额贷公司</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P2P网贷</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </fieldset>
+          <!-- 大类二 END -->
+        </div>
+      </section>
+    </section>
+  </div>
+</body>
+
+</html>
