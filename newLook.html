@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./css/layui.min.css" media="all">
+  <title>新颜详情</title>
+  <style>
+    html,
+    body {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    html {
+      background-color: #393D49;
+    }
+
+    html,
+    body,
+    p,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      height: 100%;
+      margin: 0 auto;
+      width: 1200px;
+      background: #eee;
+      overflow-y: auto;
+      padding: 30px;
+    }
+
+    .main-header {
+      border-bottom: 1px solid #393D49;
+      padding-bottom: 15px;
+    }
+
+    .main-name {
+      font-size: 30px;
+      color: #333;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    .main-idCard {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .main-content {
+      /* height: 83vh; */
+      overflow: hidden;
+      margin-top: 25px;
+    }
+
+    .main-left {
+      width: 40%;
+      float: left;
+      /* border-right: 2px dashed #393D49; */
+    }
+
+
+    .main-timer {
+      font-size: 14px;
+      font-weight: 300;
+      color: #0a0a0a;
+      float: right;
+    }
+
+    .main-right {
+      width: 59%;
+      float: right;
+
+    }
+
+
+    .layui-form-label {
+      text-align: left;
+      width: auto;
+      padding-right: 0;
+    }
+
+    .main-val {
+      /* font-weight: 400; */
+    }
+
+    .layui-table {
+      border: 1px solid #e5e5e5;
+    }
+
+    .layui-table thead tr th {
+      font-size: 13px;
+      /* background-color: #e1e1e1; */
+    }
+
+    .layui-elem-field legend {
+      font-weight: 500;
+    }
+
+    .layui-elem-field {
+      border-color: #bababa;
+      min-height: 75vh;
+    }
+
+    .main-res {
+      font-size: 27px;
+      margin-left: 10px;
+    }
+
+    .main-tips {
+      padding: 0 15px;
+      font-weight: 300;
+      font-size: 13px;
+    }
+
+    .color_hui {
+      font-weight: 300;
+    }
+
+    .color_warn {
+      color: #ff9800;
+    }
+
+    .color_error {
+      color: #e91e63;
+    }
+
+    .color_success {
+      color: #009688;
+    }
+
+    .layui-form-item {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <header class="main-header">
+      <h1 class="main-name">覃兵</h1>
+      <small class="main-idCard">身份证：330303299304930920</small>
+    </header>
+    <section class="main-content">
+      <div class="main-left">
+        <fieldset class="layui-elem-field">
+          <legend>贷后雷达报告</legend>
+          <section class="layui-field-box">
+            <div class="layui-form-item">
+              <label class="layui-form-label">报告编号：</label>
+              <div class="layui-form-mid main-val">WF110120110120110120</div>
+            </div>
+            <table class="layui-table" style="margin-bottom: 0;">
+              <tbody>
+                <tr>
+                  <td>贷后雷达</td>
+                  <td class="color_warn">B</td>
+                </tr>
+                <tr>
+                  <td>最近三个月正常履约笔数</td>
+                  <td class="color_error">10</td>
+                </tr>
+                <tr>
+                  <td>最近三个月正常履约金额</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>最近一笔履约时间</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>历史最大履约金额</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>最长逾期还款时间</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>是否同期贷款</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>最近三个月逾期未还笔数</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>最近三个月逾期未还金额</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>最近三个月逾期未还平台数</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>最近一笔逾期未还时间</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>历史最大逾期未还金额</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>信贷银行卡数</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>信贷手机数</td>
+                  <td class="color_hui">12345678</td>
+                </tr>
+                <tr>
+                  <td>是否多头逾期</td>
+                  <td class="color_success">N</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </fieldset>
+      </div>
+      <div class="main-right">
+        <fieldset class="layui-elem-field">
+          <legend>探针A报告</legend>
+          <section class="layui-field-box">
+            <div class="layui-form-item">
+              <label class="layui-form-label">报告编号：</label>
+              <div class="layui-form-mid main-val">WF110120110120110120</div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">探查结论：</label>
+              <div class="layui-form-mid main-val color_error main-res">A</div>
+            </div>
+            <!-- <p class="main-id">报告编号：9282910348959</p> -->
+            <table class="layui-table">
+              <colgroup>
+                <col width="130">
+                <col>
+                <col width="70">
+                <col>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>评估项目</th>
+                  <th>评估结果</th>
+                  <th>分布区</th>
+                  <th>建议&备注</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>异常还款机构数</td>
+                  <td class="color_error">2000-3000</td>
+                  <td class="color_error">b</td>
+                  <td>最近一次逾期至今时间在结论A用户中处于中等水平</td>
+                </tr>
+                <tr>
+                  <td>异常还款机构数</td>
+                  <td class="color_warn">2000-3000</td>
+                  <td class="color_warn">b</td>
+                  <td>最近一次逾期至今时间在结论A用户中处于中等水平</td>
+                </tr>
+                <tr>
+                  <td>异常还款机构数</td>
+                  <td class="color_success">2000-3000</td>
+                  <td class="color_success">b</td>
+                  <td>最近一次逾期至今时间在结论A用户中处于中等水平</td>
+                </tr>
+                <tr>
+                  <td>异常还款机构数</td>
+                  <td class="color_error">2000-3000</td>
+                  <td class="color_error">b</td>
+                  <td>最近一次逾期至今时间在结论A用户中处于中等水平</td>
+                </tr>
+                <tr>
+                  <td>异常还款机构数</td>
+                  <td class="color_error">2000-3000</td>
+                  <td class="color_error">b</td>
+                  <td>最近一次逾期至今时间在结论A用户中处于中等水平</td>
+                </tr>
+                <tr>
+                  <td>异常还款机构数</td>
+                  <td class="color_error">2000-3000</td>
+                  <td class="color_error">b</td>
+                  <td>最近一次逾期至今时间在结论A用户中处于中等水平</td>
+                </tr>
+                <tr>
+                  <td>异常还款机构数</td>
+                  <td class="color_error">2000-3000</td>
+                  <td class="color_error">b</td>
+                  <td>最近一次逾期至今时间在结论A用户中处于中等水平</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <dl class="main-tips">
+            <dt style="font-weight: 500;">备注：</dt>
+            <dd style="margin-top: 5px;">
+              <span style="font-weight: 500;">1、评估结果分布区说明：</span>
+              a: 在所有探针A用户中,逾期笔数或逾期/异常/睡眠机构数相对较少,或逾期时间相对较短,或逾期金额相对较低,或履约机构数较多;c: 与a相反;b: 介于a与c之间.
+            </dd>
+          </dl>
+        </fieldset>
+        <p class="main-timer">报告时间：2018-11-12 18:16:58</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+
+</html>
